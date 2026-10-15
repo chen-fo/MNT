@@ -12,9 +12,11 @@ dependencies = ["numpy>=1.24,<3", "gymnasium>=1.0,<2", "pettingzoo>=1.24,<2"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
+visualization = ["pygame>=2.5,<3"]
 
 [project.scripts]
 mnt-demo = "mnt_env.demo:main"
+mnt-watch = "mnt_env.visualization.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,5 +1,8 @@
 # MNT Benchmark
 
+新增本地 Pygame 观战工具：支持随机对局、加载冻结团队策略、暂停与逐步查看。
+安装和操作见 [本地可视化说明](docs/visualization.md)，模块变化见 [项目成长记录](WORK_LOG.md)。
+
 二维离散雷区撤离／坦克拦截环境。双方所有 agent 都接受外部策略的动作，
 采用 **PettingZoo Parallel API** 同时推进，每个 agent 独立获取局部观测与个人奖励。
 本项目只提供环境、随机策略示例与规则测试，不包含训练算法。

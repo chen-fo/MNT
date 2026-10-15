@@ -1,0 +1,12 @@
+{
+  "size": 16,
+  "num_allies": 2,
+  "num_enemies": 2,
+  "num_mines": 8,
+  "sonar_range": 8,
+  "shoot_range": 3,
+  "max_steps": 100,
+  "target_reward": 50.0,
+  "gamma": 0.95,
+  "failure_penalty": 10.0
+}
