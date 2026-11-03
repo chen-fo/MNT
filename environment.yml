@@ -1,4 +1,4 @@
-name: mtapro-mnt
+name: uav-pursuit
 channels:
   - defaults
 dependencies:

@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mnt-benchmark"
+name = "uav-pursuit"
 version = "0.1.0"
-description = "Individual-reward minefield evacuation against independently controlled tanks"
+description = "Partially observable UAV pursuit and evacuation with individual rewards"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24,<3", "gymnasium>=1.0,<2", "pettingzoo>=1.24,<2"]
@@ -14,10 +14,12 @@ dependencies = ["numpy>=1.24,<3", "gymnasium>=1.0,<2", "pettingzoo>=1.24,<2"]
 dev = ["pytest>=8,<10"]
 
 [project.scripts]
-mnt-demo = "mnt_env.demo:main"
+uav-demo = "uav_env.demo:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["uav_env*"]
+namespaces = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
